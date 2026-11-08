@@ -47,7 +47,7 @@ for (const s of S) {
 }
 const cc = C.crisis;
 const help = (cc.emergencyNumber || cc.lines.length)
-  ? `${cc.emergencyNumber ? `<p class="big">${esc(cc.emergencyLabel)}: <strong>${esc(cc.emergencyNumber)}</strong></p>` : ""}${cc.lines.map(l => `<p><strong>${esc(l.name)}</strong>: ${esc(l.phone)} ${l.hours ? "(" + esc(l.hours) + ")" : ""}</p>`).join("")}`
+  ? `${cc.emergencyNumber ? `<p class="big">${esc(cc.emergencyLabel)}: <strong>${esc(cc.emergencyNumber)}</strong></p>` : ""}${cc.lines.map(l => `<p><strong>${esc(l.name)}</strong>: ${esc(l.phone)} ${l.hours ? "(" + esc(l.hours) + ")" : ""}${l.note ? " — " + esc(l.note) : ""}</p>`).join("")}`
   : `<p>Emergency number: ____________________ &nbsp; Local helpline: ____________________</p>`;
 const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(C.programmeName)} — Printable workbook</title>
 <style>

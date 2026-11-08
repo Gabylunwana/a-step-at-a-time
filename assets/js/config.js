@@ -35,10 +35,18 @@ window.SBS_CONFIG = {
   // While these are empty the app shows a safe generic message instead.
   // ---------------------------------------------------------------------
   crisis: {
-    emergencyNumber: "",          // your local emergency number
-    emergencyLabel: "Emergency services",
+    emergencyNumber: "112",       // Nigeria national emergency number
+    emergencyLabel: "National Emergency (life-threatening emergencies)",
     lines: [
       // { name: "Name of helpline", phone: "+000 000 0000", hours: "24 hours", note: "Free, confidential" }
+      { name: "MANI (Mentally Aware Nigeria Initiative)", phone: "0809 111 6264", note: "Mental-health crisis support" },
+      { name: "MANI (Mentally Aware Nigeria Initiative)", phone: "0811 168 0686", note: "Alternative support line" },
+      { name: "SURPIN (Suicide Research and Prevention Initiative)", phone: "0800 0787 7464", note: "Suicide prevention support" },
+      { name: "SURPIN (Suicide Research and Prevention Initiative)", phone: "0908 021 7555", note: "Crisis support" },
+      { name: "SURPIN (Suicide Research and Prevention Initiative)", phone: "0903 440 0009", note: "Alternative crisis line" },
+      { name: "She Writes Woman", phone: "0800 800 2000", note: "Mental-health support" },
+      { name: "Smart Suicide Prevention Initiative", phone: "0806 210 6493", note: "Suicide prevention support" },
+      { name: "Smart Suicide Prevention Initiative", phone: "0809 210 6493", note: "Alternative support" }
     ],
     nearestCare: "the nearest hospital emergency department or primary health centre"
   }
